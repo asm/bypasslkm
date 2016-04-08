@@ -10,7 +10,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // I suppose it would be nice to log something to screen :)
+        // I suppose it would be nice to log something to the screen :)
         bypasslkm(false);
 
         Log.i("bypasslkm", "Finished patching!");
