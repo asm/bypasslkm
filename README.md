@@ -5,3 +5,5 @@ A few offsets are [included](https://github.com/asm/bypasslkm/blob/master/app/sr
 
 Use Android Studio (with the NDK installed) to build this app.  Good luck!
 
+Credit for the native code goes [here](https://github.com/jeboo/bypasslkm) and is based on [CVE-2013-6282](https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-6282).
+
