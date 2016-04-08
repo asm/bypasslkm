@@ -1,0 +1,34 @@
+apply plugin: 'com.android.model.application'
+
+model {
+    android {
+        compileSdkVersion = 18
+        buildToolsVersion = "23.0.3"
+
+        defaultConfig.with {
+            applicationId = "bypasslkm.bypasslkm"
+            minSdkVersion.apiLevel = 18
+            targetSdkVersion.apiLevel = 19
+            versionCode = 1
+            versionName = "1.0"
+        }
+    }
+
+    android.ndk {
+        moduleName = "bypasslkm"
+        ldLibs.add("log")
+    }
+
+    android.buildTypes {
+        release {
+            minifyEnabled = false
+        }
+    }
+
+    android.productFlavors {
+        create("all")
+    }
+}
+dependencies {
+    compile 'com.android.support:appcompat-v7:18.+'
+}
